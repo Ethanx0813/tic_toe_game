@@ -29,7 +29,7 @@ function handleClick(el) {
         arr[id] = currentPlayer;
         el.innerText = currentPlayer;
         currentPlayer = currentPlayer === "X" ? "O" : "X";
-        checkWinner(); // Check for a winner after each move
+        checkWinner(); // Check for a winner or draw after each move
     }
     console.log(arr);
 }
